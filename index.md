@@ -4,10 +4,9 @@ title: Full Project Report
 ---
 
 # **Real-Time IoT-Enabled Cardiovascular Monitoring System**  
-### *Metropolia University of Applied Sciences — Project Report*  
-**Authors:** Amine Benjabrou & Umesh Puri  
-**Bachelor of Engineering — Electronics**  
-**Date:** 12 October 2025  
+
+**Authors:** Umesh Puri  
+
 
 ---
 
