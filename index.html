@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umesh Puri – Skills Showcase</title>
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #1e3a8a;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    a:hover {
+        color: #3b82f6;
+    }
+
+    /* Header */
+    header {
+        background: #1e3a8a;
+        color: white;
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    header p {
+        margin: 0.5rem 0 0;
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header a {
+        display: inline-block;
+        margin-top: 1rem;
+        background: #3b82f6;
+        color: white !important;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+    header a:hover {
+        background: #2563eb;
+    }
+
+    /* Sections */
+    section {
+        padding: 2rem 1rem;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h2 {
+        color: #1e3a8a;
+        margin-bottom: 1.2rem;
+        border-bottom: 2px solid #e0e7ff;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+    }
+
+    /* Skills */
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .skill {
+        background: #e0e7ff;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    .skill:hover {
+        transform: translateY(-3px);
+    }
+
+    /* Projects */
+    .project {
+        background: white;
+        padding: 1.5rem 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project h3 {
+        color: #1e3a8a;
+        margin-bottom: 0.5rem;
+    }
+    .project p {
+        margin-bottom: 0.5rem;
+    }
+    .project a {
+        font-weight: bold;
+        color: #3b82f6;
+    }
+
+    /* About Me */
+    ul {
+        padding-left: 1.5rem;
+    }
+    ul li {
+        margin-bottom: 0.7rem;
+    }
+
+    /* Footer */
+    footer {
+        background: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 1rem;
+        margin-top: 2rem;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Umesh Puri</h1>
+    <p>Electronics & Embedded Systems | Embedded C/C++ | Signal Processing | Analog & Digital Design</p>
+    <a href="https://opintopolku.fi/koski/opinnot/3ed2b70ee5774ed6b4a04b9b04c63b84" target="_blank">View My Academic Transcripts</a>
+</header>
+
+<section>
+    <h2>Core Skills</h2>
+    <div class="skills">
+        <div class="skill">Embedded Systems</div>
+        <div class="skill">Signal Processing</div>
+        <div class="skill">Analog & Digital Design</div>
+        <div class="skill">Embedded Development (C/C++)</div>
+        <div class="skill">Python</div>
+        <div class="skill">Git</div>
+        <div class="skill">VSCode / Vim</div>
+        <div class="skill">MATLAB / SIMULINK</div>
+        <div class="skill">IoT & Wireless Communication</div>
+        <div class="skill">PCB Design (KiCad) & LTSpice</div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects & Examples</h2>
+
+    <div class="project">
+        <h3>Real-Time PPG Heart Rate Monitoring System</h3>
+        <p>ESP32-based system reading PPG signals, filtering noise, computing heart rate via FFT & interpolation, displaying on OLED, and sending data to a custom Android app via MQTT.  
+        Developed through multiple iterations on STM32 Cortex-M3 using CMSIS defines and CMSIS-DSP library. Includes a custom-designed analog front-end for accurate PPG signal acquisition.</p>
+        <p><a href="https://github.com/pointertoaperson/sensor_ppg" target="_blank">View Project</a></p>
+    </div>
+
+    <div class="project">
+        <h3>2-Bit CPU Design & Simulation</h3>
+        <p>Designed a 2-bit CPU with RISC instruction set, Harvard-style architecture, ALU, and memory operations. 
+            Simulated in Logisim-evolution and built on breadboard with 74xx series logic ICs. </p>
+        <p><a href="https://github.com/pointertoaperson/2-bit-cpu-74xx-" target="_blank">View Project</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Analog Circuit Design & Simulation</h3>
+        <p>Built and simulated analog circuits including filters, mixers, and amplifiers using KiCad and LTSpice.</p>
+    </div>
+
+    <div class="project">
+        <h3>Firmware & Software Integration</h3>
+        <p>Experience in PLCs, embedded C/C++, Python, ESP-IDF, Arduino framework, and library porting. Developed modular, maintainable firmware integrated with hardware and software systems from personal projects and coursework.</p>
+    </div>
+
+    <div class="project">
+        <h3>Digital Communication Systems</h3>
+        <p>Implemented QAM digital communication system in MATLAB with RRC filtering, ISI channel modeling, noise addition, and matched filtering. Simulated a 3G communication system as part of the Digital Communication course at Tampere University.</p>
+    </div>
+
+    <div class="project">
+        <h3>Control Systems & Signal Processing</h3>
+        <p>Implemented PID control systems, system modeling, and signal processing algorithms in MATLAB/SIMULINK as part of DSP and mathematics coursework. Designed and simulated controllers and filters, analyzed system responses, and verified performance through simulations.</p>
+    </div>
+
+</section>
+
+<section>
+    <h2>About Me</h2>
+    <ul>
+        <li>Passionate about learning and exploring new technologies in electronics, embedded systems, and signal processing.</li>
+        <li>Highly motivated to apply engineering knowledge to real-world projects and continuously improve skills through hands-on experience.</li>
+        <li>Curious and persistent in solving complex problems, from firmware development to system modeling and hardware design.</li>
+        <li>Enthusiastic about contributing to innovative projects and collaborating in multidisciplinary engineering teams.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Github: <a href="https://github.com/pointertoaperson" target="_blank" style="color: #fff; text-decoration: underline;">github.com/pointertoaperson</a></p>
+</footer>
+
+</body>
+</html>
